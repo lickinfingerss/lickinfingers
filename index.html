@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navcss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">      
+    <link rel="stylesheet" href="lickingfinger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>licking fingers</title>
+    <style>
+body{
+  padding: 0;
+  margin: 0;
+}
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 255, 179, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+      <style>
+.head-line{
+    background-image: url(emilio-garcia-lb9hi0NDjT0-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   
+    
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
+    .line-cover{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+}
+ .head-line {
+    min-width:320px ;
+    min-height: 200px;
+     margin-left: 7px;
+          margin-right:7px ;
+          margin-bottom: 30px;
+          margin-top: 30px;
+  }
+  
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+ /* Portrait and Landscape */
+ @media only screen and (min-device-width: 220px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+     .head-line{
+       width: 400px;
+       height: 200px;
+          margin-left: 10px;
+          margin-right:10px ;
+          margin-top: 10px;
+          max-width: 300px;
+
+     }
+     .line-conent{
+            padding: 50px;
+}
+.line-cover{
+    background-color: rgb(255, 255, 255);
+      display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+}
+ .head-line {
+    flex: 0 0 auto;
+  }
+ }
+
+ /* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media screen and (max-width: 800px){
+   .head-line{
+       width: 400px;
+       height: 200px;
+          margin-left: 10px;
+          margin-right:10px ;
+          margin-top: 10px;
+          max-width: 300px;
+
+     }
+     .line-conent{
+            padding: 50px;
+}
+.line-cover{
+    background-color: rgb(255, 255, 255);
+      display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+}
+ .head-line {
+    flex: 0 0 auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+     <!--.....................nav................--------->
+  <div class="topnav" id="myTopnav">
+    <img class="logo" src="images\lickinpng.png" alt="logo">
+    <div class="a">
+  <a href="index.html" class="active">Home</a>
+  <a href="#dish">dishes</a>
+  <a href="#cakes">cakes</a>
+  <a href="#contact">contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+  </a>
+</div>
+
+     <!--.....................whatsapp button................--------->
+     <a href="tel:+2348062248472">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="60" height="60" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M23.0047 4H22.9953C12.5191 4 4 12.5215 4 23C4 27.1562 5.3395 31.0085 7.61713 34.1364L5.24925 41.1949L12.5524 38.8603C15.5568 40.8505 19.1406 42 23.0047 42C33.4809 42 42 33.4761 42 23C42 12.5239 33.4809 4 23.0047 4Z" fill="#4CAF50"/>
+<path d="M33.8181 30.6754C33.3597 31.9698 31.5405 33.0433 30.0894 33.3568C29.0966 33.5682 27.7999 33.7368 23.4346 31.927C17.851 29.6138 14.2553 23.9399 13.975 23.5718C13.7066 23.2037 11.7188 20.5674 11.7188 17.8409C11.7188 15.1144 13.1034 13.7868 13.6615 13.2168C14.1199 12.7489 14.8775 12.5352 15.6042 12.5352C15.8394 12.5352 16.0508 12.547 16.2408 12.5565C16.7989 12.5803 17.0791 12.6135 17.4472 13.4947C17.9056 14.599 19.0219 17.3255 19.1549 17.6058C19.2902 17.886 19.4256 18.266 19.2356 18.6342C19.0575 19.0142 18.9007 19.1828 18.6205 19.5058C18.3402 19.8288 18.0742 20.0758 17.794 20.4225C17.5375 20.7242 17.2477 21.0472 17.5707 21.6053C17.8937 22.1515 19.01 23.9732 20.6535 25.4362C22.7744 27.3243 24.4939 27.9275 25.109 28.184C25.5674 28.374 26.1136 28.3289 26.4485 27.9727C26.8736 27.5143 27.3985 26.7543 27.9329 26.0062C28.3129 25.4694 28.7926 25.4029 29.2961 25.5929C29.8091 25.771 32.5237 27.1129 33.0819 27.3908C33.64 27.671 34.0081 27.804 34.1435 28.0392C34.2765 28.2743 34.2765 29.3787 33.8181 30.6754Z" fill="#FAFAFA"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="46" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+</button>
+</a>
+
+      <!--.....................landpage banner................--------->
+    <section class="banner-section">
+    <div class="banner">
+        <h1 class="banner-h1">Best Taste in Town</h1>
+        <p class="banner-p1">
+          we specialize in all kinds of 
+food related services including, but not limited to cake making and catering services 
+
+        </p>
+       <a href="tel:+2348062248472"> <button class="banner-butt">special order(service)</button></a>
+    </div>
+    </section>
+   
+  <!--.....................caigories1 ................-->
+   <div class="leading"id="dish">
+      <div class="heading-cover" style="text-align: center;">
+        <h1 class="hh11">some of our dishes</h1>
+        <p class="pp11">We do continental and local dishes for both special and casual occasions</p>
+      </div>
+    </div>
+
+    <div class="line-cover">
+
+    <div class="head-line" style="background-image: url(istockphoto-1094739024-612x612.jpg);">
+    </div>
+
+    
+    <div class="head-line" id="none" style="background-image: url(istockphoto-644430324-612x612.jpg);" >
+    </div>
+
+    
+    <div class="head-line" id="none" style="background-image: url(getty.jpg);">
+    </div>
+
+     <div class="head-line" id="none" style="background-image: url(ghgh.jpg);">
+    </div>
+    </div>
+
+
+    <!--.....................caigories1 ................-->
+   <div class="leading" id="cakes">
+      <div class="heading-cover" style="text-align: center;">
+        <h1 class="hh11">some of our backed products</h1>
+        <p class="pp11">
+          We make tasty and quality cakes and snakes delivered to your door step.
+        </p>
+      </div>
+    </div>
+
+    <div class="line-cover">
+
+    <div class="head-line" style="background-image: url(eugene-kuznetsov-Dkenkd-lwkc-unsplash.jpg);">
+    </div>
+
+    
+    <div class="head-line" id="none" style="background-image: url(palm.jpg);" >
+    </div>
+
+    
+    <div class="head-line" id="none" style="background-image: url(pixs.png);">
+    </div>
+
+     <div class="head-line" id="none" style="background-image: url(birth.jpg);">
+    </div>
+    </div>
+
+    
+<!-- ....................................About----------------------->
+    <div class="about" id="about">
+        <div class="about-img-container" id="about-1">
+        <img class="about-img" src="images\american-heritage-chocolate-ghtwiDUu5ro-unsplash.jpg" alt="">
+        </div>
+        <div class="about-txt" id="about-2">
+        <p class="about-p1">about licking fingers</p>
+        <h2 class="about-h1">Our Unique Approach</h2>
+        <p class="about-p2"> 
+         At lickinfingers our top most priority seeing through and making sure 
+           our customers are well attended to as fast as possible and also giving them the best tasty
+          and quality food we can possibly offer
+        </p>
+        </div>
+        </div>
+       
+        <!-- ...................................testimonial.------->
+<div class="tess-main1">
+<div class="tess-head">
+    <p class="tess-p1">TESTIMONIALS</p>
+    <h2 class="tess-h1">What our Clients Say</h2>
+</div>
+ <div class="t-center">
+    <div id="tes-main">
+        <div class="testimonial" id="tes-1">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p class="tes-p">
+             “Lickinfingers is a place I will definitely  recommend  to  anyone looking for  quality  food and fast delivery service like me. “five star for them” 
+            </p>
+            <div class="customer">
+                <img class="customer-img" src="images/neve-wine-bar-28-150x150.jpg" alt="">
+                <p class="tes-p">john samuel</p>
+            </div>
+        </div>
+
+         <div class="testimonial" id="tes-2">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p class="tes-p">
+              I was introduced to lickinfingers by my best friend and I must say it has been quite an experience 
+            </p>
+            <div class="customer">
+                <img class="customer-img" src="images/neve-wine-bar-28-150x150.jpg" alt="">
+                <p class="tes-p">john samuel</p>
+            </div>
+        </div>
+        </div>
+        </div>
+</div>
+<!--.............order.............-->
+
+<div class="order">
+    <div class="order-txt">
+    <h1 class="order-h1">place your order</h1>
+    <p class="order-p1">First order gets 30% off, stop waiting and taste the best.</p>
+    <a href="https://wa.me/message/YOXD7WFK5M6P1">
+    <button class="order-butt">contact to order(service)</button>
+    </a>
+     </div>
+</div>
+<!--...........................footer..............-->
+<div class="footer-container">
+<div class="footer">
+    <div class="contact">
+        <h3>contact info</h3>
+        <h4>(+234)8062248472</h4>
+            <li>sawani plaza</li>
+            <li>lokoja, kogi state</li>
+    </div>
+    <div class="work-time">
+        <h3>work time</h3>
+          <li>Our Work Timings</li>
+          <li>Mon. : 8am - 8pm</li>
+          <li>tue. : 9am - 7pm</li>
+          <li>Fri. : 7am - 7pm</li>
+          <li>Sat. : 9am - 9pm</li>
+          <li>sun. : Closed</li>
+    </div>
+</div>
+</div>
+<div class="copyright" style="background-color: black; text-align: center;">© Copyright lickingfingers created by joshtechx</div>
+
+</body>
+ <script>
+        //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</script>
+</html>
